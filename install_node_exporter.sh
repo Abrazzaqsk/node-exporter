@@ -10,6 +10,9 @@ tar xvfz node_exporter-${VERSION}.linux-amd64.tar.gz
 # Move the binary to /usr/local/bin
 sudo mv node_exporter-${VERSION}.linux-amd64/node_exporter /usr/local/bin/
 
+# Delete download package
+rm -rf node_exporter-1.2.2.*
+
 # Create a dedicated system user for Node Exporter
 sudo useradd --no-create-home --shell /bin/false node_exporter
 
